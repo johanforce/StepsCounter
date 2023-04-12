@@ -1,0 +1,11 @@
+package com.example.stepscounter.presentation.core
+
+enum class GoalEnum(val value: Int, val goal: String) {
+    STRICT_LOSS_WEIGHT(1, "STRICT_LOSS_WEIGHT"),
+    NORMAL_LOSS_WEIGHT(2, "NORMAL_LOSS_WEIGHT"),
+    COMFORTABLE_LOSS_WEIGHT(3, "COMFORTABLE_LOSS_WEIGHT"),
+    MAINTAIN_WEIGHT(4, "MAINTAIN_WEIGHT"),
+    NORMAL_GAIN_WEIGHT(5, "NORMAL_GAIN_WEIGHT"),
+    STRICT_GAIN_WEIGHT(6, "STRICT_GAIN_WEIGHT"),
+
+}

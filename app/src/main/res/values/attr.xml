@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BmiView">
+        <attr name="background_color" format="color" />
+        <attr name="text_color" format="color" />
+        <attr name="ruler_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="BMICircleView">
+        <attr name="triangle_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ItemTabView">
+        <attr name="text_des" format="string" />
+        <attr name="text_data" format="string" />
+        <attr name="image" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="ColorArcProgressBar">
+        <attr name="back_color" format="color"/>
+        <attr name="front_color1" format="color"/>
+        <attr name="front_color2" format="color"/>
+        <attr name="front_color3" format="color"/>
+        <attr name="back_width" format="dimension"/>
+        <attr name="front_width" format="dimension"/>
+        <attr name="is_need_title" format="boolean"/>
+        <attr name="is_need_content" format="boolean"/>
+        <attr name="is_need_unit" format="boolean"/>
+        <attr name="is_need_dial" format="boolean"/>
+        <attr name="string_title" format="string"/>
+        <attr name="string_unit" format="string"/>
+        <attr name="total_engle" format="integer"/>
+        <attr name="current_value" format="float"/>
+        <attr name="max_value" format="float"/>
+
+    </declare-styleable>
+    <declare-styleable name="JxToolbar">
+        <attr name="toolbarTitle" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="JxPickerIconWithLabel">
+        <attr name="title1" format="string" />
+        <attr name="hint1" format="string" />
+        <attr name="itemPickerIcon1" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="JxPickerIcon">
+        <attr name="itemPickerIcon" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="JxPickerText">
+        <attr name="endText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="JxInputTextField">
+        <attr name="title" format="string" />
+        <attr name="des" format="string" />
+        <attr name="hint" format="string" />
+        <attr name="titleVisibility">
+            <enum name="visible" value="0" />
+            <!-- Not displayed, but taken into account during layout (space is left for it). -->
+            <enum name="invisible" value="1" />
+            <!-- Completely hidden, as if the view had not been added. -->
+            <enum name="gone" value="2" />
+        </attr>
+        <attr name="android:inputType" />
+        <attr name="android:imeOptions" />
+        <attr name="enableErrorState" format="boolean" />
+        <attr name="singleLine" format="boolean" />
+    </declare-styleable>
+</resources>
