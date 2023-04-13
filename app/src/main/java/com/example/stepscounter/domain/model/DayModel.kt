@@ -22,8 +22,6 @@ data class DayModel(
     val pace: Double = 1.0
 ) {
 
-    companion object
-
     val distanceTravelled
         get() = run {
             val distanceCentimeters = steps * stepLength

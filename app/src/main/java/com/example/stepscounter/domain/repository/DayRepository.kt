@@ -8,7 +8,7 @@ interface DayRepository {
 
     suspend fun getFirstDay(): DayModel?
 
-    fun getDay(date: LocalDate): Flow<DayModel?>
+    fun getDay(date: LocalDate): Flow<DayModel>
 
     suspend fun getDays(date: LocalDate): DayModel?
 

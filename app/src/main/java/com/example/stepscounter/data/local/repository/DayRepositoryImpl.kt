@@ -21,7 +21,7 @@ class DayRepositoryImpl(
         }.getOrNull()
     }
 
-    override fun getDay(date: LocalDate): Flow<DayModel?> {
+    override fun getDay(date: LocalDate): Flow<DayModel> {
         val cal = Calendar.getInstance()
         val dates = Date.from(date.atStartOfDay(ZoneId.systemDefault()).toInstant())
         cal.time = dates
@@ -37,7 +37,7 @@ class DayRepositoryImpl(
         cal.set(Calendar.MILLISECOND, 999)
         val endDate = cal.timeInMillis
 
-       return dao.getDay(startDate, endDate).map { it?.toModel()}
+       return dao.getDay(startDate, endDate).map { it.toModel()}
     }
 
     override suspend fun getDays(date: LocalDate): DayModel? {

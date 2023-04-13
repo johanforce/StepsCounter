@@ -14,7 +14,7 @@ interface DayDao {
     suspend fun getFirstDay(): DayEntity?
 
     @Query("SELECT * FROM day WHERE date >= :startDate AND date <= :endDate")
-    fun getDay(startDate: Long, endDate: Long): Flow<DayEntity?>
+    fun getDay(startDate: Long, endDate: Long): Flow<DayEntity>
 
     @Query("SELECT * FROM day WHERE date >= :startDate AND date <= :endDate")
     suspend fun getDays(startDate: Long, endDate: Long): DayEntity?
