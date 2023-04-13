@@ -12,6 +12,7 @@ import com.example.stepscounter.presentation.base.BaseActivity
 import com.example.stepscounter.presentation.service.StepCounterService
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
